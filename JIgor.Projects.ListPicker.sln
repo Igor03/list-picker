@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JIgor.Projects.ListPicker.Extensions", "JIgor.Projects.ListPicker.Extensions\JIgor.Projects.ListPicker.Extensions.csproj", "{AE530362-564B-4F87-960A-ED811B0E0BC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JIgor.Projects.ListPicker.Extensions", "JIgor.Projects.ListPicker.Extensions\JIgor.Projects.ListPicker.Extensions.csproj", "{AE530362-564B-4F87-960A-ED811B0E0BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consoles", "Consoles\Consoles.csproj", "{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AE530362-564B-4F87-960A-ED811B0E0BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE530362-564B-4F87-960A-ED811B0E0BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE530362-564B-4F87-960A-ED811B0E0BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
