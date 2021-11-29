@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
-namespace JIgor.Projects.ListPicker.Extensions.Exceptions
+namespace JIgor.Projects.ListPicker.Exceptions
 {
     public class InvalidNumberOfPicksException : Exception
     {
@@ -8,12 +9,12 @@ namespace JIgor.Projects.ListPicker.Extensions.Exceptions
         {
         }
 
-        public InvalidNumberOfPicksException(string message)
+        public InvalidNumberOfPicksException([NotNull] string message)
             : base(message)
         {
         }
 
-        public InvalidNumberOfPicksException(string message, Exception inner)
+        public InvalidNumberOfPicksException([NotNull] string message, Exception inner)
             : base(message, inner)
         {
         }

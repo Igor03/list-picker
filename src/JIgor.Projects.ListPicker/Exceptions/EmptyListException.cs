@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
-namespace JIgor.Projects.ListPicker.Extensions.Exceptions
+namespace JIgor.Projects.ListPicker.Exceptions
 {
     public class EmptyListException : Exception
     {
@@ -8,12 +9,12 @@ namespace JIgor.Projects.ListPicker.Extensions.Exceptions
         {
         }
 
-        public EmptyListException(string message)
+        public EmptyListException([NotNull] string message)
             : base(message)
         {
         }
 
-        public EmptyListException(string message, Exception inner)
+        public EmptyListException([NotNull] string message, Exception inner)
             : base(message, inner)
         {
         }

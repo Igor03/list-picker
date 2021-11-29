@@ -1,10 +1,11 @@
-﻿using System;
+﻿using JIgor.Projects.ListPicker.Exceptions;
+using System;
 using System.Collections.Generic;
-using JIgor.Projects.ListPicker.Extensions.Exceptions;
+using System.Diagnostics.CodeAnalysis;
 
-namespace JIgor.Projects.ListPicker.Extensions
+namespace JIgor.Projects.ListPicker
 {
-    public static class ListPickerExtensions
+    public class ListPicker
     {
         /// <summary>
         /// This extension allows the user to remove, randomly,
@@ -14,7 +15,7 @@ namespace JIgor.Projects.ListPicker.Extensions
         /// <param name="list">Object instance that inherits from IEnumerable.</param>
         /// <param name="numberOfPicks">Number of elements that suppose to be removed from the instance of IEnumerable.</param>
         /// <returns> An updated instance of IEnumerable </returns>
-        public static IEnumerable<T> RemoveRandomly<T>(this IEnumerable<T> list,
+        public IEnumerable<T> PickElements<T>([NotNull] IEnumerable<T> list,
             int numberOfPicks)
             where T : notnull
         {
@@ -24,29 +25,35 @@ namespace JIgor.Projects.ListPicker.Extensions
                     "Number of picks should be greater than 0");
             }
 
-            List<T> updatedList = (List<T>) list;
+            List<T> castedList = (List<T>)list;
 
-            if (updatedList.Count == default)
+            if (castedList.Count == default)
             {
                 throw new EmptyListException(
                     "List cannot be empty in this scenario");
             }
 
-            if (updatedList.Count < numberOfPicks)
+            if (castedList.Count < numberOfPicks)
             {
                 throw new InvalidNumberOfPicksException(
                     "Number of picks should not be greater than the number of elements the list object has");
             }
 
             Random rnd = new Random();
+            List<T> removedElements = new List<T>(); 
 
             for (int i = 0; i < numberOfPicks; i++)
             {
-                updatedList.RemoveAt(rnd.Next(0,
-                    updatedList.Count));
+                T element = castedList[rnd.Next(0,
+                    castedList.Count)];
+
+                removedElements.Add(element);
+
+                castedList.Remove(element);
+                
             }
 
-            return updatedList;
+            return removedElements;
         }
 
         /// <summary>
@@ -56,10 +63,11 @@ namespace JIgor.Projects.ListPicker.Extensions
         /// <typeparam name="T"> Generic type T </typeparam>
         /// <param name="list">Object instance that inherits from IEnumerable.</param>
         /// <param name="numberOfPicks">Number of elements that suppose to be removed from the instance of IEnumerable.</param>
-        /// <param name="removalCondition">Removal condition delegate that determines whether or not the random selected element will be removed</param>
+        /// <param name="pickCondition">Removal condition delegate that determines whether or not the random selected element will be removed</param>
         /// <returns>An updated instance of IEnumerable.</returns>
-        public static IEnumerable<T> RemoveRandomly<T>(this IEnumerable<T> list,
-            int numberOfPicks, Func<T, bool> removalCondition)
+        public IEnumerable<T> PickElements<T>([NotNull] IEnumerable<T> list,
+            int numberOfPicks,
+            [NotNull] Func<T, bool> pickCondition)
             where T : notnull
         {
             if (numberOfPicks <= 0)
@@ -68,41 +76,51 @@ namespace JIgor.Projects.ListPicker.Extensions
                     "Number of picks should be greater than 0");
             }
 
-            List<T> updatedList = (List<T>)list;
+            List<T> castedList = (List<T>)list;
+            
 
-            if (updatedList.Count == default)
+            if (castedList.Count == default)
             {
                 throw new EmptyListException(
                     "List cannot be empty in this scenario");
             }
 
-            if (updatedList.Count < numberOfPicks)
+            if (castedList.Count < numberOfPicks)
             {
                 throw new InvalidNumberOfPicksException(
                     "Number of picks should not be greater than the number of elements the list object has");
             }
 
             Random rnd = new Random();
-            List<T> visitedElements = new List<T>();
+            List<T> pickedElements = new List<T>();
+            List<T> visitedElements = (List<T>)CopyList(castedList);
 
-            for (int i = 0; i < numberOfPicks; i++)
+            while (visitedElements.Count > 0 && numberOfPicks != pickedElements.Count)
             {
-                T element = updatedList[rnd.Next(0, updatedList.Count)];
-                visitedElements.Add(element);
+                T element = castedList[rnd.Next(0, castedList.Count)];
 
-                while (visitedElements.Contains(element))
+                if (pickCondition(element))
                 {
-                    element = updatedList[rnd.Next(0, updatedList.Count)];
-                    visitedElements.Add(element);
+                    pickedElements.Add(element);
+                    castedList.Remove(element);
                 }
 
-                if (removalCondition(element))
-                {
-                    updatedList.Remove(element);
-                }
+                visitedElements.Remove(element);
             }
 
-            return updatedList;
+            return pickedElements;
+        }
+
+        private IEnumerable<T> CopyList<T> (List<T> sourceList)
+        {
+            List<T> elements = new List<T>();
+
+            foreach(T element in sourceList)
+            {
+                elements.Add(element);
+            }
+
+            return elements;
         }
     }
 }
