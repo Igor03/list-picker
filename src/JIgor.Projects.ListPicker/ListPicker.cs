@@ -25,7 +25,7 @@ namespace JIgor.Projects.ListPicker
                     "Number of picks should be greater than 0");
             }
 
-            List<T> castedList = (List<T>)list;
+            List<T> castedList = (List<T>) list;
 
             if (castedList.Count == default)
             {
@@ -40,7 +40,7 @@ namespace JIgor.Projects.ListPicker
             }
 
             Random rnd = new Random();
-            List<T> removedElements = new List<T>(); 
+            List<T> removedElements = new List<T>();
 
             for (int i = 0; i < numberOfPicks; i++)
             {
@@ -50,7 +50,7 @@ namespace JIgor.Projects.ListPicker
                 removedElements.Add(element);
 
                 castedList.Remove(element);
-                
+
             }
 
             return removedElements;
@@ -76,8 +76,7 @@ namespace JIgor.Projects.ListPicker
                     "Number of picks should be greater than 0");
             }
 
-            List<T> castedList = (List<T>)list;
-            
+            List<T> castedList = (List<T>) list;
 
             if (castedList.Count == default)
             {
@@ -93,11 +92,12 @@ namespace JIgor.Projects.ListPicker
 
             Random rnd = new Random();
             List<T> pickedElements = new List<T>();
-            List<T> visitedElements = (List<T>)CopyList(castedList);
+            List<T> visitedElements = (List<T>) CopyList(castedList);
 
             while (visitedElements.Count > 0 && numberOfPicks != pickedElements.Count)
             {
-                T element = castedList[rnd.Next(0, castedList.Count)];
+                T element = castedList[rnd.Next(0,
+                    castedList.Count)];
 
                 if (pickCondition(element))
                 {
@@ -111,11 +111,11 @@ namespace JIgor.Projects.ListPicker
             return pickedElements;
         }
 
-        private IEnumerable<T> CopyList<T> (List<T> sourceList)
+        private IEnumerable<T> CopyList<T>(List<T> sourceList)
         {
             List<T> elements = new List<T>();
 
-            foreach(T element in sourceList)
+            foreach (T element in sourceList)
             {
                 elements.Add(element);
             }
