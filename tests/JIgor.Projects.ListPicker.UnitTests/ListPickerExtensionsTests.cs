@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace JIgor.Projects.ListPicker.Extensions.Tests
+namespace JIgor.Projects.ListPicker.UnitTests
 {
     [TestClass]
     public class ListPickerExtensionsTests

@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{899C4D78-40E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6A9560D0-04C7-4D35-BEF8-8BDEE6D4F661}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JIgor.Projects.ListPicker.Extensions.Tests", "tests\JIgor.Projects.ListPicker.Extensions.Tests\JIgor.Projects.ListPicker.Extensions.Tests.csproj", "{51D69A18-7A4C-452D-89FE-3BD30D561695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JIgor.Projects.ListPicker.UnitTests", "tests\JIgor.Projects.ListPicker.UnitTests\JIgor.Projects.ListPicker.UnitTests.csproj", "{51D69A18-7A4C-452D-89FE-3BD30D561695}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
