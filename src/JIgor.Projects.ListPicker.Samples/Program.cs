@@ -1,10 +1,9 @@
-﻿using JIgor.Projects.ListPicker;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JIgor.Projects.ListPicker.Samples.SampleObjects;
 
-
-namespace Consoles
+namespace JIgor.Projects.ListPicker.Samples
 {
     public class Program
     {

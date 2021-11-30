@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JIgor.Projects.ListPicker", "src\JIgor.Projects.ListPicker\JIgor.Projects.ListPicker.csproj", "{AE530362-564B-4F87-960A-ED811B0E0BC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consoles", "src\Consoles\Consoles.csproj", "{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JIgor.Projects.ListPicker.Samples", "src\JIgor.Projects.ListPicker.Samples\JIgor.Projects.ListPicker.Samples.csproj", "{26EAF9E2-0B85-45DE-85A8-92BFE4795C4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{899C4D78-40E4-4754-B18F-C03ADAE433A8}"
 EndProject
