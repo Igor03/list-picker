@@ -17,7 +17,7 @@ This package provides an easy way to randomly remove and return elements from an
 * Access the method ``` PickElements ``` from the instatiated class
 * Pass, as parameters, an instance of any implementation of ``` IEnumerable <T>``` such as a ``` List<T> ```, pass the number of elements you want pick from the list and, optionally, pass a ``` Func<T, bool> ``` that represents a condition to pick an element.
 
-See the [Samples Project](https://github.com/Igor03/list-picker/tree/main/src/JIgor.Projects.ListPicker.Samples) in the repository files from examples.
+See the [Samples Project](https://github.com/Igor03/list-picker/tree/main/src/JIgor.Projects.ListPicker.Samples) in the repository files for examples.
 
 ## Test Coverage
 
