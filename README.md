@@ -22,3 +22,10 @@ See the [Samples Project](https://github.com/Igor03/list-picker/tree/main/src/JI
 ## Test Coverage
 
 In the folder [TestResults](https://github.com/Igor03/list-picker/tree/main/TestResults) we have a detailed report with the unit tests' code coverage
+
+## Nuget
+This package can also be accessed through Nuget Package Manager by the nome of [JIgor.Projects.ListPicker](https://www.nuget.org/packages/JIgor.Projects.ListPicker/1.0.0).
+
+Through CLI
+
+ ``` Install-Package JIgor.Projects.ListPicker -Version 1.0.0```

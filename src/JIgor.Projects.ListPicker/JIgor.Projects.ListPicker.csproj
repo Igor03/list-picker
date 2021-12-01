@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>This package provides an easy way to randomly remove and return elements from an IEnumerable&lt;T&gt; implementation, such as a List&lt;T&gt; object.</Description>
+    <PackageId>JIgor.Projects.ListPicker</PackageId>
+    <Authors>JIgor.Projects</Authors>
+    <Company>JIgor.Projects</Company>
+    <Product>ListPicker</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Igor03/list-picker.git</RepositoryUrl>
+    <PackageTags>IEnumerable, Pick, Picker, Remover</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
