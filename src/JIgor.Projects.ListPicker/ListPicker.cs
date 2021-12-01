@@ -111,6 +111,7 @@ namespace JIgor.Projects.ListPicker
             return pickedElements;
         }
 
+        [ExcludeFromCodeCoverage]
         private IEnumerable<T> CopyList<T>(List<T> sourceList)
         {
             List<T> elements = new List<T>();

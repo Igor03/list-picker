@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace JIgor.Projects.ListPicker.Exceptions
 {
+    [ExcludeFromCodeCoverage]
     public class EmptyListException : Exception
     {
         public EmptyListException()

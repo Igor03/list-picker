@@ -1,0 +1,235 @@
+{
+  "JIgor.Projects.ListPicker.dll": {
+    "C:\\Users\\jigor\\Desktop\\ProjectsUntilTheEndOfTheYear\\JIgor.Projects.ListPicker\\src\\JIgor.Projects.ListPicker\\ListPicker.cs": {
+      "JIgor.Projects.ListPicker.ListPicker": {
+        "System.Collections.Generic.IEnumerable`1<T> JIgor.Projects.ListPicker.ListPicker::PickElements(System.Collections.Generic.IEnumerable`1<T>,System.Int32)": {
+          "Lines": {
+            "21": 4,
+            "22": 4,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "28": 3,
+            "30": 3,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "36": 2,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "42": 1,
+            "43": 1,
+            "45": 6,
+            "46": 2,
+            "47": 2,
+            "48": 2,
+            "50": 2,
+            "52": 2,
+            "54": 2,
+            "56": 1,
+            "57": 1
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 22,
+              "Offset": 10,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 30,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 44,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 36,
+              "Offset": 71,
+              "EndOffset": 73,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 71,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 158,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 45,
+              "Offset": 158,
+              "EndOffset": 160,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<T> JIgor.Projects.ListPicker.ListPicker::PickElements(System.Collections.Generic.IEnumerable`1<T>,System.Int32,System.Func`2<T,System.Boolean>)": {
+          "Lines": {
+            "72": 4,
+            "73": 4,
+            "74": 1,
+            "75": 1,
+            "76": 1,
+            "79": 3,
+            "81": 3,
+            "82": 1,
+            "83": 1,
+            "84": 1,
+            "87": 2,
+            "88": 1,
+            "89": 1,
+            "90": 1,
+            "93": 1,
+            "94": 1,
+            "95": 1,
+            "97": 6,
+            "98": 5,
+            "99": 5,
+            "100": 5,
+            "102": 5,
+            "103": 1,
+            "104": 1,
+            "105": 1,
+            "106": 1,
+            "108": 5,
+            "109": 5,
+            "111": 1,
+            "112": 1
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 73,
+              "Offset": 12,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 81,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 81,
+              "Offset": 46,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 87,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 87,
+              "Offset": 73,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 97,
+              "Offset": 208,
+              "EndOffset": 114,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 5
+            },
+            {
+              "Line": 102,
+              "Offset": 148,
+              "EndOffset": 150,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 102,
+              "Offset": 148,
+              "EndOffset": 170,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 5
+            },
+            {
+              "Line": 97,
+              "Offset": 187,
+              "EndOffset": 189,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 5
+            },
+            {
+              "Line": 97,
+              "Offset": 187,
+              "EndOffset": 203,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 97,
+              "Offset": 208,
+              "EndOffset": 210,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}
